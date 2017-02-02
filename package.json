@@ -1,0 +1,26 @@
+{
+  "name": "streaming-media-hw",
+  "version": "1.0.0",
+  "description": "Streaming Media homework",
+  "main": "server.js",
+  "scripts": {
+      "start": "node ./src/server.js",
+      "pretest": "eslint ./src --fix",
+      "test": "echo \"Tests complete\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VLesnar/Streaming-Media-Homework.git"
+  },
+  "author": "Veronica Lesnar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VLesnar/Streaming-Media-Homework/issues"
+  },
+  "homepage": "https://github.com/VLesnar/Streaming-Media-Homework#readme",
+  "devDependencies": {
+    "eslint": "^3.14.1",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0"
+  }
+}
