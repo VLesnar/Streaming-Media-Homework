@@ -12,10 +12,10 @@ const loadFile = (request, response, fileStr, typeStr) => {
       return response.end(err);
     }
 
-    const range = request.headers.range;
+    let range = request.headers.range;
 
     if (!range) {
-      return response.writeHead(416);
+      range = 'bytes=0-';
     }
 
     const positions = range.replace(/bytes=/, '').split('-');
